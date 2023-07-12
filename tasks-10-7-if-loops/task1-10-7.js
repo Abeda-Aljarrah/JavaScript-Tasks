@@ -4,7 +4,7 @@ let x = 10;
 let y = 20;
 if (x > y) {
     console.log(x)
-}else{
+}else if (y > x) {
     console.log(y);
 }
 
@@ -13,6 +13,7 @@ if (x > y) {
  specified sign. Go to the editor 
 Sample numbers : 3, -7, 2 
 Output : The sign is - */
+
 let q = 3;
 let w = -7;
 let e = 2;

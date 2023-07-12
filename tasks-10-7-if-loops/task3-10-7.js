@@ -37,9 +37,9 @@ let p = "";
 for (let i = 1; i <= 8; i++) {
   
    for (let num = 1; num <= i; num++) {
-      p += num;
+      p += num;  /*+= addition operator*/
    }
-   p += "\n";
+   p += "\n";  /*new line*/
 }
 console.log(p);
 

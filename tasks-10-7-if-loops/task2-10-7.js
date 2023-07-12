@@ -6,6 +6,9 @@ equal or between 70 and 79 ===> C
 equal or between 80 and 89 ===> B
 equal or between 90 and 100 ===> A
 */
+
+// it's better to use switch here
+
 const num = parseFloat(prompt("Enter your rate: "));
 if (num < 50){
     alert(`Fail`)
