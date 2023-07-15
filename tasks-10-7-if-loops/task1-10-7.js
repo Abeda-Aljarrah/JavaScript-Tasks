@@ -17,30 +17,35 @@ Output : The sign is - */
 let q = 3;
 let w = -7;
 let e = 2;
-if( q > 0 && w > 0 && e > 0){
+if(q*w*e>=0){
     alert(`the sign is +`);
-}
-else if( q < 0 && w < 0 && e < 0){
-    alert(`the sign is -`)
-}
-else if ( q < 0 && w > 0 && e < 0){
-    alert(`the sign is +`)
-}
-else if (q > 0 && w < 0 && e < 0){
-    alert(`the sign is +`)
-}
-else if (q < 0 && w > 0 && e > 0){
-    alert(`the sign is +`)
-}
-else if (q > 0 && w < 0 && e > 0){
-    alert(`the sign is -`)
-}
-else if (q < 0 && w > 0 && e > 0){
-    alert(`the sign is -`)
-}
-else if (q > 0 && w > 0 && e < 0){
-    alert(`the sign is -`)
-}
+}else{
+    alert(`the sign is -`)}
+
+// if( q > 0 && w > 0 && e > 0){
+//     alert(`the sign is +`);
+// }
+// else if( q < 0 && w < 0 && e < 0){
+//     alert(`the sign is -`)
+// }
+// else if ( q < 0 && w > 0 && e < 0){
+//     alert(`the sign is +`)
+// }
+// else if (q > 0 && w < 0 && e < 0){
+//     alert(`the sign is +`)
+// }
+// else if (q < 0 && w > 0 && e > 0){
+//     alert(`the sign is +`)
+// }
+// else if (q > 0 && w < 0 && e > 0){
+//     alert(`the sign is -`)
+// }
+// else if (q < 0 && w > 0 && e > 0){
+//     alert(`the sign is -`)
+// }
+// else if (q > 0 && w > 0 && e < 0){
+//     alert(`the sign is -`)
+// }
 
 /* 3. Write a JavaScript conditional statement to sort three numbers. Display an alert box to show the result. Go to the editor 
 Sample numbers : 0, -1, 4 
