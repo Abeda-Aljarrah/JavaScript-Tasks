@@ -1,0 +1,39 @@
+[
+    {   
+        "Name": "Razan",
+        "Age": 24,
+        "Major": "Engineering",
+        "University": "Yarmouk",
+        "Image": "./Razan.jpg"
+    
+    },
+
+    {
+        "Name": "Mark",
+        "Age": 35,
+        "Major": "CS",
+        "University": "Harvard",
+        "Image": "./Mark-Zuckerberg.jpg" 
+    },
+    {
+        "Name": "Elon",
+        "Age": 40,
+        "Major": "Physics",
+        "University": "University of Pennsylvania",
+        "Image": "./Elon.jpg" 
+    },
+    {
+        "Name": "Bill Gates",
+        "Age": 67,
+        "Major": "pre-law",
+        "University": "Harvard University",
+        "Image": "./Bill.jpg" 
+    },
+    {
+        "Name": "Steve",
+        "Age": 66,
+        "Major": "humanities",
+        "University": "Reed College",
+        "Image": "./steve.jpg" 
+    }
+]

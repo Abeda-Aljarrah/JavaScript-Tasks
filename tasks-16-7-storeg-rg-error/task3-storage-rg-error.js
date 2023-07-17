@@ -11,21 +11,21 @@ function validation(){
     let Fncheck=/\b([A-Z][-,a-z. ']+[ ]*)+/;
     let Lncheck=/\b([A-Z][-,a-z. ']+[ ]*)+/;
     let Bdatecheck = /^[0-9]{1,2}[-]{1}[0-9]{1,2}[-]{1}[0-9]{4}$/;
-    let Emailcheck = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    let Emailcheck = /^[\w-\.]+@([\w-]+\.)+[.com]$/;
     let passcheck = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
 
 
     if(Fncheck.test(Firstname)){
         document.getElementById("Fnamet").innerHTML="is valied";}
         else{
-        document.getElementById("Fnamet").innerHTML="the First name is not vailed should start with(A-Z) and continue _ . end with #";
+        document.getElementById("Fnamet").innerHTML="the First name is not vailed should start with(A-Z) and use small letters and can not end with -(Hyphen)";
         return false;
         };
 
             if(Lncheck.test(Lirstname)){
             document.getElementById("Lnamet").innerHTML=" Lname is valied";}
             else{
-            document.getElementById("Lnamet").innerHTML=" The Last name is not vailed should start with(A-Z) and continue _ . end with #";
+            document.getElementById("Lnamet").innerHTML=" The Last name is not vailed should start with(A-Z) and use small letters and can not end with -(Hyphen)";
             return false;
             };
         
@@ -58,17 +58,17 @@ function validation(){
             }
         
             if (passcheck.test(password)) {
-                document.getElementById("Passwordt").innerHTML = "Date is valid.";
+                document.getElementById("Passwordt").innerHTML = "password is valid.";
             } else {
-                document.getElementById("Passwordt").innerHTML = "The date is not valid. Please use the format dd-mm-yyyy.";
+                document.getElementById("Passwordt").innerHTML = "The password is not valid.";
                 return false;
             }
 
 
             if (confirmpassword.match(password) ){
-                document.getElementById("ConfirmPasswordt").innerHTML = "Email is confirmed.";
+                document.getElementById("ConfirmPasswordt").innerHTML = "password is confirmed.";
             } else {
-                document.getElementById("ConfirmPasswordt").innerHTML = "Email is not confirmed. Please re-enter.";
+                document.getElementById("ConfirmPasswordt").innerHTML = "password is not confirmed. Please re-enter.";
                 return false;
             }
             

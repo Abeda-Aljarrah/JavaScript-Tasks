@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <button value="" onclick=" x.send()">Load Data</button>
+    <table id="table">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Major</th>
+        <th>University</th>
+        <th>Image</th>
+      </tr>
+    </table>
+    <script>
+      const x = new XMLHttpRequest();
+      x.open("GET", "task.json");
+
+      x.onload = function () {
+        const myObj = JSON.parse(this.responseText);
+        console.log(myObj);
+
+        const table = document.getElementById("table");
+        myObj.forEach(function (person) {
+          const row = table.insertRow();
+          const nameCell = row.insertCell();
+          const ageCell = row.insertCell();
+          const majorCell = row.insertCell();
+          const universityCell = row.insertCell();
+          const imageCell = row.insertCell();
+
+          nameCell.innerHTML = person.Name;
+          ageCell.innerHTML = person.Age;
+          majorCell.innerHTML = person.Major;
+          universityCell.innerHTML = person.University;
+          imageCell.innerHTML = `<img src="${person.Image}" alt="${person.Name}" width="200" height="190">`;
+        });
+      };
+    </script>
+  </body>
+</html>
