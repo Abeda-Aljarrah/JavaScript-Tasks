@@ -24,4 +24,3 @@ async function get(){
           imageCell.innerHTML = `<img src="${person.image}" alt="${person.actor}" width="200" height="190">`;
         });
 }
-
