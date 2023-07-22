@@ -1,5 +1,5 @@
 *{
-    padding: 0%;
+    padding: 0;
     margin: 0;
 }
 #background{
@@ -10,56 +10,29 @@ img{
     width: 900px;
 }
 #header{
-    position: absolute;
-    top: 400px;
-    left: 630px;
     font-family: 'Delicious Handrawn', cursive;
     font-size: 70px;
     color:saddlebrown;
 }
 #enter{
-    position: absolute;
-    top: 580px;
-    left: 540px;
+    margin-top: 30px;
     width: 400px;
     height: 40px;
 }
 #add{
-    position: absolute;
-    top: 580px;
-    left: 900px;
-    height: 46px;
+    height: 40px;
     width: 80px;
+    padding: 10px;
 }
 #search{
-    position: absolute;
-    top: 650px;
-    left: 650px;
+    margin-top: 20px ;
     width: 200px;
     height: 40px;
 
 }
-#task1{
-    position: absolute;
-    top: 750px;
-    left: 450px;
+#tasks {
+    margin: 10px;
 }
-#task2{
-    position: absolute;
-    top: 900px;
-    left: 450px;
-}
-#task3{
-    position: absolute;
-    top: 1050px;
-    left: 450px;
-}
-
-/* #task4{
-    position: absolute;
-    top: 1200px;
-    left: 450px;
-} */
 .tasksContainer{
     /* cursor: pointer;
   position: relative;
@@ -67,10 +40,12 @@ img{
   background: #eee;
   font-size: 18px;
   transition: 0.2s; */
-    display: inline-block;
+    display: block;
+
     width: 666px;
     height: 150px;
-    position: absolute;
+    margin: 0 auto;
+    /* position: absolute; */
 }
 /* .new-task{
     position: absolute;
